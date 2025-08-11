@@ -1,23 +1,33 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('I am Poor'),
-          backgroundColor: Colors.blue,
-          centerTitle: true,
-        ),
-        backgroundColor: Colors.blueGrey,
-        body: Center(
-          child: Image(
-            image: NetworkImage(
-              'https://www.clarke-energy.com/wp-content/uploads/2020/01/Coal-use-for-all-for-now-scaled.jpg',
+        backgroundColor: Colors.red,
+        body: SafeArea(
+          child: Container(
+            height: 100.0,
+            width: 100.0,
+            margin:
+                EdgeInsets.symmetric(
+                  vertical: 50.0,
+                  horizontal: 10.0,
+                ),
+            padding: EdgeInsets.all(
+              20.0,
             ),
+            color: Colors.white,
+            child: Text('Hello'),
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
