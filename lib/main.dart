@@ -14,27 +14,20 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    height: double.infinity,
-                    width: 100,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: double.infinity,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                ],
+              CircleAvatar(
+                radius: 100,
+                backgroundColor: Colors.blue,
+                backgroundImage: NetworkImage(
+                  'https://thumbs.dreamstime.com/b/smiling-satisfied-businessman-12424407.jpg',
+                ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(height: 100, width: 100, color: Colors.yellow),
-                  Container(height: 100, width: 100, color: Colors.green),
-                ],
+              Text(
+                'Kunal Patil',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
