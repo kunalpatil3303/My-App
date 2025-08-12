@@ -24,9 +24,19 @@ class MyApp extends StatelessWidget {
               Text(
                 'Kunal Patil',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
+                ),
+              ),
+              Text(
+                'Product Manager',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  letterSpacing: 2.5,
                 ),
               ),
             ],
